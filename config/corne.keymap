@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "zmk-helpers/unicode-chars/danish.dtsi"
 #include aliases.h
 
 #define AS(keycode) &as LS(keycode) keycode
@@ -177,14 +176,14 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U   |  I   |  O   | P |
-// |  A  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |  L   | ' | 
-// |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   | CTRL | Æ | , |
+// |  A  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |  L   | Å | 
+// |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   | Æ | Ø | , |
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
    AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     &kp LBKT
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &kp AE  &kp SQT  AS(COMMA)
+   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &kp SEMI  &kp SQT  AS(COMMA)
         &kp LGUI &mo 1 &kp SPACE     AS(RET) &mo 2  &kp BSPC
                         >;
                 };
