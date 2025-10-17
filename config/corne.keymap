@@ -16,11 +16,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 
-#define DK_LESS  SHIFT(COMMA)       // < on Shift + ,
-#define DK_GRTR  SHIFT(PERIOD)      // > on Shift + .
-
-
-
 
 / {
     chosen {
@@ -212,13 +207,13 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  +  |  -  |  *  |  /  |  \  |     |  (  |  )  |  7  |  8  |  9  |
-// |     |     |     |  <  |  >  |     |  [  |  ]  |  4  |  5  |  6  |
+// |     |     |     |     |     |     |  [  |  ]  |  4  |  5  |  6  |
 // |     |     |     |     |     |     |  {  |  }  |  1  |  2  |   3 |
 //             | TAB |     | SPC |     | ENT | 0 | del_word |
                         display-name = "Lower";
                         bindings = <
 &kp DK_plus &kp DK_minus  &kp DK_astrk  &kp DK_flsh  &kp_dk_BLSH    &kp DK_lpar  &kp DK_rpar  &kp N7  &kp N8  &kp N9
-&none   &none   &none   &DK_LESS  &DK_GRTR       &kp_dk_LBRC  &kp_dk_RBRC  &kp N4  &kp N5  &kp N6    
+&none   &none   &none   &none  &none      &kp_dk_LBRC  &kp_dk_RBRC  &kp N4  &kp N5  &kp N6    
 &none   &none   &none   &none   &none         &kp_dk_LBKT    &kp_dk_RBKT  &kp N1  &kp N2  &kp N3   
                                     &kp TAB  &none   &kp SPACE       &kp RET     &kp N0        &del_word
                         >;
