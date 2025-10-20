@@ -214,7 +214,7 @@
                         bindings = <  
 &kp DK_plus     &kp DK_minus   &kp DK_astrk  &kp DK_flsh    &kp_dk_BLSH     &kp DK_lpar    &kp DK_rpar  &kp N7  &kp N8  &kp N9
 &kp EXCL        &kp DK_qmark   &kp_dk_PIPE   &kp DK_sqt     &kp DK_dqt      &kp_dk_LBRC    &kp_dk_RBRC  &kp N4  &kp N5  &kp N6    
-&kp DK_equal    &kp AMPS       &kp AT        &kp HASH       &kp PRCNT       &kp_dk_LBKT    &kp_dk_RBKT  &kp N1  &kp N2  &kp N3   
+&kp DK_equal    &kp AMPERSAND       &kp AT        &kp HASH       &kp PRCNT       &kp_dk_LBKT    &kp_dk_RBKT  &kp N1  &kp N2  &kp N3   
                 &kp TAB        &none         &kp SPACE      &kp RET         &kp N0         &del_word
                         >;
                 };
@@ -228,9 +228,9 @@
                         display-name = "Raise";
                         bindings = <
 
-&none       &kp UP    &none         &kp TAB     &kp LALT        &none       &none     &kp C_VOL_UP  &none    &none
+&none       &kp UP    &none         &kp LALT     &kp TAB        &none       &none     &kp C_VOL_UP  &none    &none
 &kp LEFT    &kp DOWN  &kp RIGHT     &none       &none           &none       &kp HOME  &kp C_VOL_DN  &kp END  &none
-&kp DELETE  &markA    &goDesk       &copy       &dk_paste       &none       &none     &none         &none    &none
+&kp DELETE  &markA    &goDesk       &copy       &dk_paste       &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3     &bt BT_SEL 4
                       &kp LGUI      &none       &kp ESC         &kp LCTRL   &none     &kp BACKSPACE
                         >;
                 };
