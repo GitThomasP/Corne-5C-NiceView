@@ -229,7 +229,7 @@
                         bindings = <
 
 &none       &kp UP    &none         &kp LALT     &kp TAB        &none       &none     &kp C_VOL_UP  &none    &none
-&kp LEFT    &kp DOWN  &kp RIGHT     &none       &none           &none       &kp HOME  &kp C_VOL_DN  &kp END  &none
+&kp LEFT    &kp DOWN  &kp RIGHT     &none       &kp GRAVE           &none       &kp HOME  &kp C_VOL_DN  &kp END  &none
 &kp DELETE  &markA    &goDesk       &copy       &dk_paste       &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3     &bt BT_SEL 4
                       &kp LGUI      &none       &kp ESC         &kp LCTRL   &none     &kp BACKSPACE
                         >;
